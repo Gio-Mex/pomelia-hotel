@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITIES */
+.primary-font {
+  font-family: "Montserrat", sans-serif;
+}
+
+.secondary-font {
+  font-family: "Poppins", sans-serif;
+}
+
+.primary-color {
+  color: #6ca853;
+}
+
+.primary-bg {
+  background-color: #6ca853;
+}
+
+.secondary-color {
+  color: #000;
+}
+
+.secondary-bg {
+  background-color: #000;
+}
+
+.white-color {
+  color: #fff;
+}
+
+.w-50 {
+  width: 50%;
+}
+.w-60 {
+  width: 60%;
+}
+.w-80 {
+  width: 80% !important;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.g-2 {
+  gap: 2rem !important;
+}
+
+.visibility {
+  display: initial;
+}
+
+/* LOGO & NAVBAR */
+.logo-container {
+  width: 10rem;
+  height: 4rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 110%;
+}
+
+.icon,
+.hamburger-icon,
+.close-icon {
+  font-size: 2rem !important;
+  cursor: pointer;
+}
+
+.hamburger-icon,
+.close-icon {
+  display: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  z-index: 1;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: right;
+  gap: 2rem;
+  list-style-type: none;
+}
+
+.navbar-menu a {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.navbar-menu a:hover {
+  color: #6ca853;
+}
+
+/* HERO SECTION */
+.hero-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+
+/* CONTENT SECTION */
+.banner {
+  width: 60%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.content-row {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.content-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  gap: 1rem;
+}
+
+/* CARDS */
+.card {
+  padding: 1.5rem;
+  border: 1px solid #6ca853;
+}
+
+.card:hover {
+  background-color: #e6ffdb;
+}
+
+/* BUTTONS */
+.button {
+  width: 180px !important;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.button:active {
+  opacity: 0.7;
+}
+
+/* CONTACT FORM */
+.wpcf7 form {
+  width: 80%;
+  height: 750px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #6ca853;
+  padding: 20px;
+  margin: 10px auto;
+  background: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 0;
+  border-radius: 4px;
+}
+
+.wpcf7 textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 0;
+  border-radius: 4px;
+}
+
+.wpcf7 input[type="submit"] {
+  width: 180px;
+  padding: 15px 25px;
+  display: flex;
+  margin: 10px auto;
+  font-size: 18px;
+  border: 0;
+  border-radius: 25px;
+  background: #000;
+  color: #6ca853;
+  cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 0.8rem;
+    z-index: 2;
+  }
+
+  .logo-container {
+    margin: auto;
+  }
+
+  .nav-container {
+    position: fixed;
+    width: 40vw;
+    height: 100vh;
+    top: 0;
+    left: -40vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    border-right: 1px solid #6ca853;
+    z-index: 3;
+    transition: left 0.6s;
+  }
+
+  .navbar-menu {
+    display: flex;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+    list-style-type: none;
+  }
+
+  .close-icon {
+    display: block;
+    align-self: end;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+  }
+
+  .open {
+    left: 0 !important;
+  }
+
+  .banner {
+    width: 80vw !important;
+  }
+
+  .visibility {
+    display: none;
+  }
+
+  h1 {
+    font-size: 2.2rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+
+  .w-80 {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .wpcf7 form {
+    width: 50%;
+  }
+}

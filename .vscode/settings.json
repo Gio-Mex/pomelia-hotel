@@ -1,0 +1,6 @@
+{
+  "intelephense.rename.namespaceMode": "single",
+  "intelephense.environment.includePaths": [
+    "/Applications/XAMPP/xamppfiles/htdocs/Pomelia-Hotel"
+  ]
+}
