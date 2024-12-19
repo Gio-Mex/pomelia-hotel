@@ -5,6 +5,11 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Pomelia Hotel">
+  <meta property="og:image" content="/assets/img/home-thumbnail.png">
+  <meta name="description" content="An hypotehical hotel in Ragusa.">
+  <meta name="robots" content="index, follow">
   <?php wp_head(); ?>
 </head>
 
